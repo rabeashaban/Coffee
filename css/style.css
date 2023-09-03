@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+}
+body{
+    scroll-behavior: smooth;
+    
+}
+ul{
+    list-style: none;
+}
+
+
+.tit{
+    padding-top: 60px;
+    transition: 0.5s;
+    font-family: 'ADLaM Display', cursive;
+    text-align: center;
+    
+    }
+    @media(max-width:670px){
+    .tit:hover{
+        transform: scale(1.1);
+        color: #ffd700;
+    }
+}
+a{
+    font-family: 'ADLaM Display', cursive;
+}
+
+
+#scroltop{
+    width: 30px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    display: none;
+}
+#scroltop i {
+    color: red;
+    cursor: pointer;
+}
+/***************************/
+
+header{
+    height: 50px;
+    background-color: #222;
+    box-shadow: 15px 0px 15px rgb(123, 122, 122) ;
+    position: fixed;
+    width: 100%;
+    z-index: 5161;
+}
+nav img{
+    margin-top: 5px;
+    width: 50px;
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+}
+.navhedar{
+    display: flex;
+    align-items: center;
+
+}
+.navhedar li{
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    border-color: transparent;
+
+}
+.navhedar li:hover{
+    height:40px;
+    border-bottom: 3px solid #ffd700 ;
+    border-top: 3px solid #ffd700 ;
+    border-radius: 8px;
+
+}
+
+
+.navhedar li a{
+    padding: 0 10px ;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+.navhedar li:hover a{
+color: white;
+}
+
+@media(max-width:556px){
+    nav{
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+.navhedar{
+    display: none;
+}
+#navbar{
+    outline: none;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-color: rgb(102, 100, 100);
+    cursor: pointer;  
+}
+.sidbar{
+    position: absolute;
+    background-color: #222;
+    right:4px;
+    display: none;
+    width: 150px;
+    height: 230px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border:2px solid #4d3625;
+border-top: transparent;
+}
+.sidbar ul li{
+    text-align: center;
+
+}
+.sidbar a{
+    display: block;
+ color: rgb(255, 255, 255);
+ font-size: 21px;
+ text-decoration: none;
+ transition: 0.5s;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+.sidbar a:hover{
+    background-color: #4d3625;
+    color: #ddd;
+}
+#hide{
+    outline: none;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+}
+/*****************/
+
+@media(min-width:556px){
+    #navbar{
+        display: none;
+    }
+
+    .sidbar{
+        display: none;
+    }
+    #hide{
+        display: none;
+
+    }
+    
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+i{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+/* End Header  */
+
+/* Start Home */
+.Home{
+    background:url(../imgies/cavar.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Home .Contenar{
+    text-align: center;
+    padding-top: 1px;
+}
+
+.Contenar .Text-box{
+    background-color: #2222229e;
+    text-align: center;
+ margin: 150px auto 0 auto;
+    width:fit-content;
+}
+.Contenar .Text-box h1{
+    font-size: 30px;
+    color: #fff;
+}
+.Contenar .Text-box p{
+    font-size: 25px;
+    color: #777;
+}
+
+/* End Home */
+
+/* start About */
+
+#About{
+    direction: rtl;
+    margin: 30px 0;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+#About h1{
+    height: 0px;
+    color: #000000;
+    border-bottom: 2px solid #777;
+    width: 151px;
+    margin: 0 auto ;
+    
+ 
+}
+#About .Contaenar{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px , 1fr));
+    gap: 40px;
+}
+
+.Text-About p {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Amiri', serif;
+
+}
+@media(max-width:556px){
+    #About,.Text-About{
+        text-align: center;
+    }
+    .Text-About p {
+        font-size: 20px;
+        width: 360px;
+        padding: 25px;
+        text-align: right;
+    }
+}
+.img-about{
+    text-align: center;
+}
+
+
+
+/*Start Products */
+.bg{
+    background-color: #222;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    border-radius: 10px;
+}
+
+.Products{
+    direction: rtl;
+    margin: 30px 50px ;
+}
+.Products h1{
+    height: 50px;
+    color: white;
+    border-bottom: 2px solid #777;
+    width: 151px;
+    margin: auto;
+}
+.Products .Contaenar{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
+    gap: 40px;
+    margin: auto;
+}
+.Contaenar .box-product{
+    text-align: center;
+    transition: 0.5s;
+}
+.Contaenar .box-product:hover{
+    transform: scale(1.1);
+}
+.Contaenar .box-product i {
+    text-align: center;
+    display: block;
+}
+.Contaenar .box-product i img{
+    width: 100px;
+}
+.box-product h2{
+text-align: center;
+margin-top: 30px;
+margin-bottom: 20px;
+color: #ddd;
+}
+.box-product p{
+    color: #777;
+}
+.btn{
+    margin-top: 100px;
+    text-align: center;
+}
+.btn button{
+    border:2px solid #776868e9;
+    padding: 10px;
+    cursor: pointer;
+    outline: #ddd;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn button:hover{
+    background-color:#776868e9;
+}
+
+/*End Products */
+/* start menu */
+.Our-Menu{
+    background-image: url(../imgies/menu.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+padding-bottom: 80px;
+}
+
+.Tital-menu{
+    text-align: center;
+}
+.Tital-menu img{
+    width: 180px;
+}
+.Tital-menu h1{
+    height: 50px;
+    border-bottom:3px solid #777;
+    width:fit-content;
+    margin: auto;
+    font-size: 30px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+
+.Our-Menu .Contaenar{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    margin: 0 auto;
+    gap: 40px ;
+}
+
+.Our-Menu .Contaenar .Menu{
+    background-color: #222222a1;
+    border: 2px solid white;
+    padding-bottom: 20px;
+    transition: 0.5s;
+height: 60vh;
+}
+.titl{
+    text-align: center;
+}
+.titl img{
+    padding-top: 20px;
+    width: 50px;
+}
+.titl h1{
+    font-size: 25px;
+    color: #fff;
+}
+.Menu div{
+    text-align: center;
+}
+.Menu div p{
+    font-size: 20px;
+    color: #ddd;
+    font-weight: 900;
+    line-height: 30px;
+    transition: 0.5s;
+}
+.Menu div p:hover{
+    background-color: #ddd;
+    color: #000;
+    border-radius: 10px;
+}
+.Our-Menu .Contaenar .Menu:hover{
+    transform: scale(1.1);
+}
+.Menu h5{
+    text-align: right;
+    margin-right: 10px;
+    color: #bd9770;
+}
+/* End menu */
+
+/* start gallery*/
+
+ .gallery .Contenar{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(214px, 1fr));
+    gap: 20px 5px;
+}
+
+@media(min-width:552px){
+    .gallery .Contenar{
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 20px 5px;
+    }
+}
+
+.gallery img{
+    width: 200px;
+    height: 400px;
+    min-width: 100%;
+    transition: 0.5s;
+}
+.gallery h1{
+    text-align: center;
+    height: 50px;
+    border-bottom:2px solid #777;
+    width: 100px;
+    margin: auto;
+}
+
+.gallery img:hover{
+    transform: scale(1.1);
+opacity: .6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+background-color: #222;
+text-align: center;
+border-radius: 10px;
+margin-top: 50px;
+}
+
+footer .Contaenar{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(490px , 1fr));
+    gap: 10px 0;
+}
+
+@media(max-width:556px){
+    footer .Contaenar{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+        gap: 10px 0;
+    }
+  
+}  
+@media(max-width:1470px){
+.none{
+        display: none;
+    }
+}
+footer img{
+    padding: 20px 0 ;
+    width: 100px;
+}
+.menuFotar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0  10px 40px 10px ;
+}
+.menuFotar li{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.menuFotar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.5s;
+    border: 2px solid transparent;
+
+}
+.menuFotar a:hover{
+    color: white;
+background-color: #000;
+border-radius: 15px;
+
+border: 2px solid white;
+}
+
+.locition{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.locition h1{
+    font-size: 30px;
+    color: white;
+    line-height: 60px;
+}
+.locition p{
+    font-size: 25px;
+    color: #777;
+}
+.locition img{
+    width: 40px;
+}
